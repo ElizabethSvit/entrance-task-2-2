@@ -16,11 +16,6 @@
 }
 
 
-
-/*.logo-img img {*/
-    /*vertical-align: middle;*/
-/*}*/
-
 /* Style the top navigation bar */
 .navbar {
     padding-left: 52px;
@@ -57,11 +52,6 @@
     text-align: left;
 }
 
-/* Change color on hover */
-/*.navbar a:hover {
-    color: black;
-}*/
-
 .navbar a.active {
     opacity: 1;
     color: #333333;
@@ -77,6 +67,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.dropdown-menu {
+    display: none;
 }
 
 .row {
@@ -100,6 +94,7 @@ body {
 
 .full-header {
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .side p, .main p, .full-side p {
@@ -111,6 +106,7 @@ body {
 
 .horizontal-arrows {
     margin-left: auto;
+    flex-wrap: wrap;
 }
 
 .horizontal-arrows img {
@@ -126,14 +122,17 @@ body {
 
 .img-content {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
 
     top: 20px;
     left: 0px;
     bottom: 0px;
 
     width: 100%;
+    height: 331px;
 
-    z-index: 5;
+    overflow: auto;
 }
 
 .left-col {
@@ -146,9 +145,11 @@ body {
     flex: 40%;
     padding-top: 20px;
     padding-right: 20px;
+
 }
 
 .left-col p {
+    font-family: ArialMT;
     font-size: 14px;
     padding-top: 0;
     /*margin-top: 0px;*/
@@ -159,8 +160,6 @@ body {
     font-family: Arial-BoldMT;
     font-size: 27px;
     color: #333333;
-    /*margin-top: 0px;*/
-    /*margin-bottom: 6px;*/
 }
 
 .right-col .card {
@@ -169,7 +168,16 @@ body {
     margin-right: 0;
 }
 
+.arrows-double img {
+    padding-left: 76px;
+}
+
+.temp-info {
+    margin-top: 25px;
+}
+
 .temp-info p {
+    font-family: ArialMT;
     font-size: 14px;
     color: #858585;
     margin-bottom: 4px;
@@ -188,11 +196,14 @@ body {
 .card-body {
     padding: 14px 14px 14px;
     height: 100%;
+    position: relative;
 
 }
 
 .card-text {
-    vertical-align: bottom;
+    position: absolute;
+    bottom: 14px;
+    padding-right: 15px;
 }
 
 .card-text p {
@@ -203,6 +214,10 @@ body {
     text-align: left;
 
     padding-top: 0;
+}
+
+.card-text h4 {
+    margin: 0;
 }
 
 .card-text p.text-muted {
@@ -239,6 +254,12 @@ body {
     flex-wrap: wrap;
 }
 
+.bottom-cards {
+    padding-top: 20px;
+    display: flex;
+
+}
+
 .full-side {
     flex: 100%;
     padding-right: 40px;
@@ -251,9 +272,7 @@ body {
 }
 
 .card {
-    /*position: relative;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
+    min-width: 200px;
     width: 200px;
     height: 120px;
     word-wrap: break-word;
@@ -305,8 +324,6 @@ body {
     margin-left: auto;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-
 @media screen and (max-width: 1500px) {
     .side {
         padding-left: 39px;
@@ -314,21 +331,12 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-
-    .side {
-        padding-left: 39px;
-    }
-}
-
-
-@media screen and (max-width: 700px) {
     .right-cards {
         flex-wrap: nowrap;
     }
+}
 
-    .row {
-        flex-direction: column;
-    }
+@media screen and (max-width: 1000px) {
 
     .side {
         padding-left: 39px;
@@ -338,7 +346,80 @@ body {
         display: none;
     }
 
+    .img-container {
+        padding-right: 39px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .center-cropped {
+        object-fit: none; /* Do not scale the image */
+        object-position: center; /* Center the image within the element */
+        height: 282px;
+        width: 335px;
+
+        border-radius: 20px;
+    }
+
+    .img-content {
+        height: 282px;
+        width: 335px;
+    }
+
     .navbar {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: block;
+        /*not working */
+        /* margin-left: auto; */
+        padding-left: 207.6px;
+    }
+
+    .left-col p.greeting {
+
+        font-size: 18px;
+    }
+
+    .left-col p {
+        font-size: 12px;
+    }
+
+    .left-col {
+        flex: none;
+    }
+
+    .right-col {
+        display: flex;
+        width: 100%;
+    }
+
+    .right-col .card {
+        margin-left: 20px;
+    }
+
+    .temp-info {
+        margin-top: 15px;
+    }
+
+    .temp-info p {
+        font-size: 12px;
+    }
+
+    .temp-info h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .temp-info img {
+        -moz-transform: scale(0.66);
+        zoom: 0.6;
+    }
+    
+    .arrows-double {
         display: none;
     }
 }

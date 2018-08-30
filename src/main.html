@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/new_test.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen">
     <title>Test</title>
 </head>
 <body>
@@ -17,6 +17,7 @@
             <a href="#">Устройства</a>
             <a href="#">Сценарии</a>
         </div>
+        <div class="dropdown-menu"><img src="../guide/assets/icon_list_m@1x.svg"></div>
     </div>
 
 </div>
@@ -26,53 +27,58 @@
         <p>Главное</p>
 
         <div class="img-container">
-            <img style="z-index: 1; float:left;width:100%;height:100%;object-fit:cover;" src="../guide/assets/bg@1x.png"/>
+            <img style="z-index: 1;" class="center-cropped" src="../guide/assets/bg@1x.png"/>
             <div class="img-content">
-                <div class="row">
-                    <div class="left-col">
-                        <p class="greeting">Привет, Геннадий!</p>
-                        <p> Двери и окна закрыты, сигнализация включена.</p>
-                        <p style="color: #858585; font-size: 10px">Игра началась.</p>
+                <!--<div class="img-row">-->
+                <div class="left-col">
+                    <p class="greeting">Привет, Геннадий!</p>
+                    <p> Двери и окна закрыты, сигнализация включена.</p>
+                    <p style="color: #858585; font-size: 10px">Игра началась.</p>
 
-                        <div class="temp-info">
-                            <div class="col-lg-6">
-                                <p> Дома </p>
-                                <h1> +23</h1>
-                            </div>
-                            <div class="col-lg-6">
-                                <p> За окном </p>
-                                <h1>+19 <img src="../guide/assets/cloud-drizzle.png"></h1>
-
-                            </div>
+                    <div class=" row temp-info">
+                        <div class="col-lg-6">
+                            <p> Дома </p>
+                            <h1> +23</h1>
                         </div>
-                    </div>
-
-                    <div class="right-col">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="../guide/assets/icon_temperature@1x.png"/>
-                                <div class="card-text">
-                                    <h4>Philips Cooler</h4>
-                                    <p class="text-muted">Начнет охлаждать в 16:30</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="../guide/assets/icon_sun@1x.png"/>
-                                <div class="card-text">
-                                    <h4>Xiaomi Yeelight LED Smart Bulb</h4>
-                                    <p class="text-muted">Включится в 17:00</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="card">
+                        <div class="col-lg-6">
+                            <p> За окном </p>
+                            <h1>+19
+                                <img src="../guide/assets/cloud-drizzle.png">
+                            </h1>
 
                         </div>
                     </div>
+                </div>
+
+                <div class="right-col">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../guide/assets/icon_temperature@1x.png"/>
+                            <div class="card-text">
+                                <h4>Philips Cooler</h4>
+                                <p class="text-muted">Начнет охлаждать в 16:30</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../guide/assets/icon_sun@1x.png"/>
+                            <div class="card-text">
+                                <h4>Xiaomi Yeelight LED Smart Bulb</h4>
+                                <p class="text-muted">Включится в 17:00</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card arrows-double">
+                        <div class="card-body">
+                            <img src="../guide/assets/Icons / Arrow Double / M.png"/>
+
+                        </div>
+                    </div>
+                    <!--</div>-->
 
                 </div>
             </div>
@@ -95,7 +101,7 @@
         <div class="right-cards">
             <div class="wide-card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_sun_2@1x.png"/>
                     <div class="card-text">
                         <p>Выключить весь свет в доме и во дворе</p>
                         <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
@@ -105,9 +111,9 @@
 
             <div class="wide-card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_scheduled@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
+                        <p>Я ухожу</p>
                         <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
                     </div>
                 </div>
@@ -115,9 +121,9 @@
 
             <div class="wide-card active" href="#">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_sun_2@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
+                        <p>Выключить свет в коридоре</p>
                         <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
                     </div>
                 </div>
@@ -125,19 +131,19 @@
 
             <div class="wide-card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_temperature_2@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
-                        <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
+                        <p>Набрать горячую ванную</p>
+                        <p class="text-muted">Начнётся в 18:00</p>
                     </div>
                 </div>
             </div>
 
             <div class="wide-card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_temperature_2@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
+                        <p>Сделать пол тёплым во всей квартире</p>
                         <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
                     </div>
                 </div>
@@ -167,13 +173,23 @@
         </div>
 
 
-        <div class="right-cards">
+        <div class="bottom-cards">
             <div class="card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_sun_2@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
-                        <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
+                        <p>Xiaomi Yeelight LED Smart Bulb</p>
+                        <p class="text-muted">Включено</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <img src="../guide/assets/icon_sun@1x.png"/>
+                    <div class="card-text">
+                        <p>D-Link Omna 180 Cam</p>
+                        <p class="text-muted">Включится в 17:00</p>
                     </div>
                 </div>
             </div>
@@ -182,38 +198,48 @@
                 <div class="card-body">
                     <img src="../guide/assets/icon_temperature@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
-                        <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
+                        <p>Elgato Eve Degree Connected</p>
+                        <p class="text-muted">Выключено до 17:00</p>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_sun@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
-                        <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
+                        <p>LIFX Mini Day & Dusk A60 E27</p>
+                        <p class="text-muted">Включится в 17:00</p>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_sun_2@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
-                        <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
+                        <p>Xiaomi Mi Air Purifier 2S</p>
+                        <p class="text-muted">Включено</p>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <img src="../guide/assets/icon_temperature@1x.png"/>
+                    <img src="../guide/assets/icon_sun@1x.png"/>
                     <div class="card-text">
-                        <p>Выключить весь свет в доме и во дворе</p>
-                        <!--<p class="text-muted">Начнет охлаждать в 16:30</p>-->
+                        <p>Philips Zhirui</p>
+                        <p class="text-muted">Включено</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <img src="../guide/assets/icon_sun_2@1x.png"/>
+                    <div class="card-text">
+                        <p>Xiaomi Mi Air Purifier 2S</p>
+                        <p class="text-muted">Включено</p>
                     </div>
                 </div>
             </div>
